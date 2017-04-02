@@ -3,6 +3,8 @@ PHP Backend System
 <img src="http://i.imgur.com/vhQfmAc.png" alt="" title=""><br>
 <img src="http://i.imgur.com/wOGk40G.png" alt="" title=""><br>
 <img src="http://i.imgur.com/Oiu8Txe.png"><br>
+### TODO
+- 同一DBをconfig上複数のShard等に分けた場合、複数のDB接続が作れてしまうので、同一DBであれば接続は1個にしたい。
 
 ### やりたいこと
 #### 軽量、負荷対策
