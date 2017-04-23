@@ -50,7 +50,40 @@ Redisへのキャッシュ
 
 
 
-
+### ORM
+<pre>
+#1	
+	[a]=1
+	[b]=2
+	where a=1 and b=2
+#1-1	
+	[a][ ＞,＜,＞＝,＜＝,＜＞]=1
+  [b]=[between, [min, max]]
+  [c]=[like, val, (left,right)]
+  [c]=[in, (,,,,)]
+	
+#2	
+	[or][a]=1
+	[or][b]=2
+	where a=1 or b=2
+#3	
+	[a]=1
+	[or][b]=2
+	[or][c]=3
+	where a=1 and (b=2 or c=3)
+#4	
+	[0][or][a]=1
+	[0][or][b]=2
+	[1][or][c]=3
+	[1][or][d]=4
+	(a=1 or b=2) and (c=3 or d=4)
+#4	
+	[or][0][a]=1
+	[or][0][b]=2
+	[or][1][c]=3
+	[or][1][d]=4
+	(a=1 and b=2) or (c=3 and d=4)
+ </pre>
 
 
 
